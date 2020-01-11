@@ -1,3 +1,17 @@
 import React from "react"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
+import { Box, Heading } from "@chakra-ui/core"
 
-export default () => <div>Hello world!</div>
+const Home = props => {
+  return (
+    <Layout>
+      <SEO />
+      <Box w="100%" h="100%" textAlign="center" alignItems="middle">
+        <Heading>Hello there!</Heading>
+      </Box>
+    </Layout>
+  )
+}
+
+export default Home
